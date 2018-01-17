@@ -11,8 +11,6 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
     libudunits2-dev \
     tk-dev \
     unixodbc-dev \
-  && install2.r --error \
-    RColorBrewer \
   && R -e "source('https://bioconductor.org/biocLite.R')" \
   && install2.r --error \
     --deps TRUE \
