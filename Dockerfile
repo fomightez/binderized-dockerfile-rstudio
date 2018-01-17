@@ -6,8 +6,8 @@ RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
     --deps TRUE \
     RColorBrewer \
     pheatmap \
-    tximportData \
-    tximport \
+    #tximportData \
+    #tximport \
     readr \
     clusterProfiler \
     pathview \
