@@ -84,10 +84,10 @@ RUN if [ -f install.R ]; then R --quiet -f install.R; fi
 
 
 # This is a combination of parts of:
-https://hub.docker.com/r/rocker/geospatial/~/dockerfile/
-https://github.com/rocker-org/binder/blob/master/3.4.2/Dockerfile 
-in that order to do much of what binder-examples/dockerfile-rstudio
-does in approach. However, here, insteasd of the geospatial items
-I used the approach of `R -e "source('https://bioconductor.org/biocLite.R')" \  && install2.r --error \` from
-https://hub.docker.com/r/rocker/tidyverse/~/dockerfile/
-to add my favorite packages from bioconductor.
+# https://hub.docker.com/r/rocker/geospatial/~/dockerfile/
+# https://github.com/rocker-org/binder/blob/master/3.4.2/Dockerfile 
+# in that order to do much of what binder-examples/dockerfile-rstudio
+# does in approach. However, here, insteasd of the geospatial items
+# I used the approach of `R -e "source('https://bioconductor.org/biocLite.R')" \  && install2.r --error \` from
+# https://hub.docker.com/r/rocker/tidyverse/~/dockerfile/
+# to add my favorite packages from bioconductor.
