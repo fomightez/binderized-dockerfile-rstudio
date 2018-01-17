@@ -1,7 +1,8 @@
 FROM rocker/verse:devel
 MAINTAINER "Wayne Decatur" fomightez@gmail.com
 
-RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
+RUN apt-get update -qq apt-get -y --no-install-recommends install \
+  && R -e "source('https://bioconductor.org/biocLite.R')" \
   && install2.r --error \
     --deps TRUE \
     RColorBrewer \
