@@ -14,6 +14,7 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
   && R -e "source('https://bioconductor.org/biocLite.R')" \
   && install2.r --error \
     --deps TRUE \
+    RColorBrewer \
     pheatmap \
     tximportData \
     tximport \
@@ -71,8 +72,6 @@ CMD jupyter notebook --ip 0.0.0.0
 
 
 ## If extending this image, remember to switch back to USER root to apt-get
-
-RColorBrewer \
     
 # Copy repo into ${HOME}, make user own $HOME
 USER root
