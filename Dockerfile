@@ -1,17 +1,7 @@
-FROM rocker/verse:devel
+FROM rocker/verse:latest
 MAINTAINER "Wayne Decatur" fomightez@gmail.com
 
-RUN apt-get update -qq && apt-get install -y --no-install-recommends \
-    lbzip2 \
-    libhdf5-dev \
-    libproj-dev \
-    libnetcdf-dev \
-    libsqlite3-dev \
-    libssl-dev \
-    libudunits2-dev \
-    tk-dev \
-    unixodbc-dev \
-  && R -e "source('https://bioconductor.org/biocLite.R')" \
+RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
   && install2.r --error \
     --deps TRUE \
     RColorBrewer \
