@@ -1,4 +1,4 @@
-FROM rocker/verse:3.4
+FROM rocker/verse:3.4.0
 MAINTAINER "Wayne Decatur" fomightez@gmail.com
 
 RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
