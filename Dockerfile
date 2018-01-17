@@ -13,7 +13,7 @@ RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
     #pathview \
     #KEGGREST \
     #DOSE \
-    DESeq2 \
+    #DESeq2 \
     edgeR
 
 ## Notes: Above install2.r uses --deps TRUE to get Suggests dependencies as well.
