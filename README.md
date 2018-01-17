@@ -6,7 +6,9 @@ This deploys a Binder that exposes the
 RStudio UI instead of a Jupyter Notebook. It also installs
 several packages from the tidyverse, and includes a demo
 script to show off functionality.  Plus some items for bioinformatics. Several I was unable to install via the Dockerfile.
-And so I gave up for now. Can do once running with this in the running RStudio session:
+And so I gave up doing it that way for now.  
+
+Can do once running with this in the running RStudio session:
 
     source("https://bioconductor.org/biocLite.R")
     biocLite(c("tximportData", "tximport"))
