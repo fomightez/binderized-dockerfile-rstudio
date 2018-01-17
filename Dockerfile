@@ -1,11 +1,21 @@
 FROM rocker/verse:devel
 MAINTAINER "Wayne Decatur" fomightez@gmail.com
 
-RUN apt-get update -qq apt-get -y --no-install-recommends install \
+RUN apt-get update -qq && apt-get install -y --no-install-recommends \
+    lbzip2 \
+    libhdf5-dev \
+    libproj-dev \
+    libnetcdf-dev \
+    libsqlite3-dev \
+    libssl-dev \
+    libudunits2-dev \
+    tk-dev \
+    unixodbc-dev \
+  && install2.r --error \
+    RColorBrewer \
   && R -e "source('https://bioconductor.org/biocLite.R')" \
   && install2.r --error \
     --deps TRUE \
-    RColorBrewer \
     pheatmap \
     tximportData \
     tximport \
