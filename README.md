@@ -2,10 +2,10 @@
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/fomightez/dockerfile-rstudio/master)
 
-This is a proof-of-concept to deploy a Binder that exposes the
+This deploys a Binder that exposes the
 RStudio UI instead of a Jupyter Notebook. It also installs
 several packages from the tidyverse, and includes a demo
-script to show off functionality.
+script to show off functionality.  Plus some items for bioinformatics. Several I was unable to install via the Dockerfile.
 
 To start your RStudio session, click on "new" in the top right,
 and at the bottom will be `RStudio Session`.
