@@ -1,4 +1,4 @@
-FROM rocker/verse:devel
+FROM rocker/verse:3.4
 MAINTAINER "Wayne Decatur" fomightez@gmail.com
 
 RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
@@ -6,7 +6,7 @@ RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
     --deps TRUE \
     RColorBrewer \
     pheatmap \
-    #tximportData \
+    tximportData \
     tximport \
     readr \
     clusterProfiler \
