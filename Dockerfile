@@ -8,13 +8,14 @@ RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
     pheatmap \
     #tximportData \
     #tximport \
-    readr \
+    #readr \
     #clusterProfiler \
     #pathview \
     #KEGGREST \
     #DOSE \
     #DESeq2 \
     #edgeR
+    readr
 
 ## Notes: Above install2.r uses --deps TRUE to get Suggests dependencies as well.
 
