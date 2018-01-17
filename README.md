@@ -11,7 +11,9 @@ And so I gave up doing it that way for now.
 Can do once running with this in the running RStudio session:
 
     source("https://bioconductor.org/biocLite.R")
-    biocLite(c("tximportData", "tximport"))
+    biocLite(c("tximport","DESeq2","readr","RColorBrewer","pheatmap"))
+    biocLite(c("edgeR","DOSE","KEGGREST","pathview","clusterProfiler"))
+    OPTIONAL: biocLite(c("tximportData"))
 
 I think that works whereas it fails in the Dockerfile because rocker us MRAN as pointed out [here](https://stackoverflow.com/a/41400455/8508004), which came up when I searched for issues, and as described [here](https://www.bioconductor.org/install/#why-biocLite) the `biocLite()` approach is the recommended way because it overcomes issues the 'standard' way R packages are installed, which is what I was ending up doing in the Dockerfile.  
 BUT IT TAKES FOREVER!!
