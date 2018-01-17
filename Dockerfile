@@ -1,4 +1,4 @@
-FROM rocker/verse:3.4.0
+FROM rocker/verse:3.4.2
 MAINTAINER "Wayne Decatur" fomightez@gmail.com
 
 RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
@@ -10,6 +10,8 @@ RUN apt-get update -qq && R -e "source('https://bioconductor.org/biocLite.R')" \
     tximport \
     readr \
     clusterProfiler \
+    pathview \
+    KEGGREST \
     DOSE \
     DESeq2 \
     edgeR
