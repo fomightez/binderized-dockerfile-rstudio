@@ -1,4 +1,4 @@
-# RStudio with Bioinformatics Packeases in Binder using a Dockerfile
+# RStudio in Binder using a Dockerfile (the hope was to add Bioinformatics Packages but so far little luck)
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/fomightez/dockerfile-rstudio/master)
 
@@ -27,5 +27,4 @@ Click that and your RStudio session will begin momentarily!
 
 See `instructions.ipynb` for more details.
 
-*Special thanks to Ryan Lovett (@ryanlovett) for figuring out
-RStudio support with JupyterHub*
+
