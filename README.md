@@ -10,7 +10,7 @@ script to show off functionality.  Plus, I added my favorite R-related items for
 Running RStudio session
 -----------------------
 
-To start your RStudio session, click on "new" in the top right,
+To start your RStudio session once [the Binder instance](http://mybinder.org/v2/gh/fomightez/dockerfile-rstudio/master) has launched, click on "new" in the top right,
 and at the bottom will be `RStudio Session`.
 Click that and your RStudio session will begin momentarily!
 
