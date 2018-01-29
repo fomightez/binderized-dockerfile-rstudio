@@ -1,4 +1,4 @@
-# RStudio with Bioinformatics Package in Binder 
+# RStudio with Bioinformatics Packages that run in Binder 
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/fomightez/dockerfile-rstudio/master)
 
