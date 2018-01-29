@@ -29,6 +29,7 @@ RUN mkdir -p ${VENV_DIR} && chown -R ${NB_USER} ${VENV_DIR}
 
 USER ${NB_USER}
 RUN python3 -m venv ${VENV_DIR} && \
+    pip3 install pip --upgrade && \
     pip3 install --no-cache-dir \
          notebook==5.2 \
          git+https://github.com/jupyterhub/nbrsessionproxy.git@6eefeac11cbe82432d026f41a3341525a22d6a0b \
@@ -68,3 +69,4 @@ RUN if [ -f install.R ]; then R --quiet -f install.R; fi
 # I used the approach of https://github.com/taylorreiter/dockerfile-r that was forked from https://github.com/binder-examples/dockerfile-r 
 # (discovered it in the network diagram of the forked repos when `rna-seq` in the tags caught my eye)
 # to add an `install.R` file and install my favorite packages from bioconductor.
+# addition of `pip3 install pip --upgrade && \` based on https://github.com/probcomp/packaging/issues/10 when I got error `pip install [...] no such option: --no-cache-dir` without it
